@@ -1,0 +1,50 @@
+main {
+    width: 100dvw;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 350px 600px 350px;
+    column-gap: 30px;
+    justify-content: center;
+    background: #2a603b;
+}
+
+#central-column {
+    border: solid #a7c74f;
+    border-width: 0 2px;
+}
+
+#left-sidebar > header {
+    text-align: center;
+    font-size: 24px;
+    color: #a7c74f;
+}
+
+#right-sidebar > input {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 24px;
+    background: black;
+    color: wheat;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    color: wheat;
+    border-bottom: 2px solid #a7c74f;
+    padding: 10px 0;
+}
+
+article > img {
+    justify-self: center;
+}
+
+article > div > p:first-child {
+    margin-top: 0;
+}
+
+article > div > p:last-child {
+    margin-bottom: 0;
+}
