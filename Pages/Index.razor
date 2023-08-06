@@ -1,4 +1,11 @@
 ﻿@page "/"
+@code {
+    IEnumerable<Post> GetPosts()
+    {
+        var context = new EntityContext();
+        return context.Posts.AsEnumerable();
+    }
+}
 
 <main>
     <section id="left-sidebar">
@@ -6,9 +13,11 @@
     </section>
 
     <section id="central-column">
-        <Post Content="@("Lorem.\r\nIpsum.")" />
-        <Post Content="Dolor sit amet." />
-        <Post Content="Consectetur adipiscling elit and that's as much as I can remember." />
+        @foreach (var post in GetPosts())
+        {
+            <PostView Content="@post.Content" />
+        }
+        
     </section>
 
     <section id="right-sidebar">
