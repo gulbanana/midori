@@ -17,6 +17,7 @@ article > div > a {
 
 article > div > p {
     color: wheat;
+    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 }
 
 article > div > p:first-child {
