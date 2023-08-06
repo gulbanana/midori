@@ -1,0 +1,28 @@
+﻿article {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    
+    border-bottom: 2px solid #a7c74f;
+    padding: 10px 0;
+}
+
+article > img {
+    justify-self: center;
+    clip-path: circle(20px at center);
+}
+
+article > div > a {
+    color: #a7c74f;
+}
+
+article > div > p {
+    color: wheat;
+}
+
+article > div > p:first-child {
+    margin-top: 0;
+}
+
+article > div > p:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,14 @@
+﻿@code {
+    [Parameter] public string Content { get; set; } = "";
+}
+
+<article>
+    <img src="/fdam.jpg" width="40" height="40" />
+    <div>
+        <a>@@gulbanana</a>
+        @foreach (var para in Content.Split(Environment.NewLine))
+        {
+            <p>@para</p>
+        }
+    </div>
+</article>
